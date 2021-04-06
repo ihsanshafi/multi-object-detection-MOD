@@ -13,3 +13,6 @@ This is a basic object detection using the  YOLO algorithm in python
 * https://pjreddie.com/media/files/yolov3-tiny.weights yolov3-tiny.weights file if you are using a raspberry pi of Nvidia jetson nano
 
 ## coco.names
+
+# other
+https://play.google.com/store/apps/details?id=com.pas.webcam if you want to use your phone as a web cam (This is optional)

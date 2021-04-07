@@ -3,7 +3,7 @@ import cv2 as cv
 import numpy as np 
 
 
-#
+#variables
 url = 'http://192.168.1.2:8080/video'
 cap = cv.VideoCapture(url)
 classfile = 'coco.names'
@@ -13,7 +13,7 @@ confthreshold = 0.5
 nms_threshold = 0.3
 
 with open(classfile,'rt') as f:
-    classnames = f.read().rstrip('\n').split('\n')
+    classnames = f.read().rstrip('\n').split('\n') #to access the categories in coco.names
 
 #models
 modelconfig = 'yolov3.cfg'
@@ -23,6 +23,7 @@ net = cv.dnn.readNet(modelconfig,modelweight)
 net.setPreferableBackend(cv.dnn.DNN_BACKEND_OPENCV)
 net.setPreferableTarget(cv.dnn.DNN_TARGET_CPU)
 
+#detection function
 def find_obj(outputs,img):
     hT,wT,cT = img.shape
     bbox = []

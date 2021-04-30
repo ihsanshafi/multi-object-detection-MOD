@@ -1,4 +1,4 @@
-# object-detection
+# multi-object-detection(MOD)
 This is a basic object detection using the  YOLO algorithm in python
 
 # Requirements
